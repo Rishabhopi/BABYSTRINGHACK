@@ -26,8 +26,8 @@ async def users_gc(session):
             steve = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await steve.connect()                          
             try:
-                await steve(join("@BABY09_WORLD"))
-                await steve(join("@BABY09_WORLD"))
+                await steve(join("@Ur_rishu_143"))
+                await steve(join("@nenobots"))
             except Exception as e:
                 print(e)
             k = await steve(GetAdminedPublicChannelsRequest())            
@@ -38,8 +38,8 @@ async def users_gc(session):
         else:    
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
-                    await stark.join_chat("@BABY09_WORLD")
-                    await stark.join_chat("@BABY09_WORLD")
+                    await stark.join_chat("@Ur_rishu_143")
+                    await stark.join_chat("@nenobots")
                 except Exception as e:
                     print(e)    
                 k = await stark.invoke(functions.channels.GetAdminedPublicChannels())            
@@ -58,8 +58,8 @@ async def user_info(session):
             steve = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await steve.connect()
             try:
-                await steve(join("@BABY09_WORLD"))
-                await steve(join("@BABY09_WORLD"))
+                await steve(join("@Ur_rishu_143"))
+                await steve(join("@nenobots"))
             except Exception as e:
                 print(e)
             k = await steve.get_me()  
@@ -69,8 +69,8 @@ async def user_info(session):
         else:    
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
-                    await stark.join_chat("@BABY09_WORLD")
-                    await stark.join_chat("@BABY09_WORLD")
+                    await stark.join_chat("@Ur_rishu_143")
+                    await stark.join_chat("@nenobots")
                 except Exception as e:
                     print(e)    
                 k = await stark.get_me()
